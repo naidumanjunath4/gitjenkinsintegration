@@ -1,6 +1,6 @@
-# Pull base image 
-From tomcat:8-jre8 
+#This is a sample Image
+FROM ubuntu
+MAINTAINER demousr@gmail.com
 
-# Maintainer 
-MAINTAINER "naidumanjunath4@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+RUN apt-get update
+CMD [“echo”,”Image created”]
